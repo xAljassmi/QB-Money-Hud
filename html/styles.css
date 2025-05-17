@@ -1,0 +1,57 @@
+@import url('https://fonts.cdnfonts.com/css/pricedown');
+
+
+/* Money */
+#money-container {
+  position: absolute;
+  right: 20px;
+  top: 25vh;
+  font-size: 35px;
+}
+
+#sign, #bank {
+  font-family: 'Pricedown Bl', sans-serif;
+  text-align: right;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
+}
+
+#plus {
+  font-size: 50px;
+  font-family: 'Pricedown Bl', sans-serif;
+  text-align: right;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
+}
+
+#minus {
+  font-size: 50px;
+  font-family: 'Pricedown Bl', sans-serif;
+  text-align: right;
+  color: #ac0000;
+  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
+}
+
+#money {
+  font-family: 'Pricedown Bl', sans-serif;
+  text-align: right;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+
+/* Script By AboMalak | https://discord.gg/LcStore */
