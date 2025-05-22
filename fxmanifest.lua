@@ -1,18 +1,13 @@
 fx_version "cerulean"
 game "gta5"
-lua54 'yes'
-author "Aljassmi"
-description 'R6-Team | Aljassmi'
+
+author "Rc2"
 version "1.0"
 
+lua54 "yes"
 
-client_scripts {
-    'client/*.lua'
-}
-
-server_scripts {
-    'server/*.lua'
-}
+client_script 'client.lua'
+server_script 'server.lua'
 
 ui_page 'html/index.html'
 

@@ -1,5 +1,11 @@
 @import url('https://fonts.cdnfonts.com/css/pricedown');
 
+/* Currency Image Style */
+.currency-icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
 
 /* Money */
 #money-container {
@@ -12,7 +18,7 @@
 #sign, #bank {
   font-family: 'Pricedown Bl', sans-serif;
   text-align: right;
-  color: #ffffff;
+  color: #e27005;
   text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
 }
 
@@ -20,7 +26,7 @@
   font-size: 50px;
   font-family: 'Pricedown Bl', sans-serif;
   text-align: right;
-  color: #ffffff;
+  color: #e27005;
   text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
 }
 
@@ -39,6 +45,7 @@
   text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
 }
 
+/* Animation */
 .slide-fade-enter-active {
   transition: all 0.3s ease-out;
 }
@@ -52,6 +59,3 @@
   transform: translateX(20px);
   opacity: 0;
 }
-
-
-/* Script By AboMalak | https://discord.gg/LcStore */

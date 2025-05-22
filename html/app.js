@@ -1,3 +1,4 @@
+// MONEY HUD
 const moneyHud = Vue.createApp({
     data() {
         return {
@@ -30,6 +31,9 @@ const moneyHud = Vue.createApp({
         });
     },
     methods: {
+        // CONFIGURE YOUR CURRENCY HERE
+        // https://www.w3schools.com/tags/ref_language_codes.asp LANGUAGE CODES
+        // https://www.w3schools.com/tags/ref_country_codes.asp COUNTRY CODES
         formatMoney(value) {
             const formatter = new Intl.NumberFormat("en-US", {
                 style: "currency",

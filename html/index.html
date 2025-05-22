@@ -10,43 +10,53 @@
     <script src="https://cdn.jsdelivr.net/npm/quasar@2.1.0/dist/quasar.umd.prod.js" defer></script>
     <script src="app.js" defer></script>
 </head>
+
 <body>
-    <div id="AboMalak-container">
+    <div id="main-container">
         <div id="money-container">
             <div id="money-cash">
                 <transition name="slide-fade">
                     <p v-if="showCash">
-                        <img src="dirham.png" alt="SAR Symbol" id="sign" style="height: 30px; vertical-align: middle; margin-right: 5px;">
-                        <span id="money">{{ cash }}</span>
+                        <span id="sign">
+                            <img src="dirham.png" alt="$" class="currency-icon" />
+                            &nbsp;
+                        </span>
+                        <span id="money">{{(cash)}}</span>
                     </p>
                 </transition>
             </div>
+
             <div id="money-bank">
                 <transition name="slide-fade">
                     <p v-if="showBank">
-                        <img src="dirham.png" alt="SAR Symbol" id="sign" style="height: 30px; vertical-align: middle; margin-right: 5px;">
-                        <span id="bank">{{ bank }}</span>
+                        <span id="sign">
+                            <img src="dirham.png" alt="$" class="currency-icon" />
+                            &nbsp;
+                        </span>
+                        <span id="bank">{{(bank)}}</span>
                     </p>
                 </transition>
             </div>
+
             <div id="money-change" v-if="showUpdate">
-                <transition name="slide-fade">
-                    <p v-if="plus" id="money">
-                        <span id="plus">+&nbsp;</span>
-                        <img src="dirham.png" alt="SAR Symbol" id="sign" style="height: 30px; vertical-align: middle; margin-right: 5px;">
-                        <span id="money">{{ amount }}</span>
-                    </p>
-                    <p v-else-if="minus" id="minus">
-                        <span id="minus">-&nbsp;</span>
-                        <img src="dirham.png" alt="SAR Symbol" id="sign" style="height: 30px; vertical-align: middle; margin-right: 5px;">
-                        <span id="money">{{ amount }}</span>
-                    </p>
-                </transition>
+                <p v-if="plus" id="money">
+                    <span id="plus">+&nbsp;</span>
+                    <span id="sign">
+                        <img src="dirham.png" alt="$" class="currency-icon" />
+                        &nbsp;
+                    </span>
+                    <span id="money">{{(amount)}}</span>
+                </p>
+                <p v-else-if="minus" id="minus">
+                    <span id="minus">-&nbsp;</span>
+                    <span id="sign">
+                        <img src="dirham.png" alt="$" class="currency-icon" />
+                        &nbsp;
+                    </span>
+                    <span id="money">{{(amount)}}</span>
+                </p>
             </div>
         </div>
     </div>
 </body>
 </html>
-
-
-<!-- Script By AboMalak | https://discord.gg/LcStore -->
