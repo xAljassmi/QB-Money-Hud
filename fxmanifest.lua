@@ -1,8 +1,8 @@
 fx_version "cerulean"
 game "gta5"
 lua54 'yes'
-author "AboMalak"
-description 'R6-Team | AboMalak'
+author "Aljassmi"
+description 'R6-Team | Aljassmi'
 version "1.0"
 
 
@@ -22,6 +22,3 @@ files {
 	'html/app.js',
 	'html/dirham.png'
 }
-
-
--- Script By AboMalak | https://discord.gg/LcStore
